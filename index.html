@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
   
-  <title>Frontend Mentor | Bookmark landing page</title>
+  <title>Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,13 +15,28 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
+<section class="navbar">
+  <div id="bookmark-logo">
+    <img src="./assets/images/logo-bookmark.svg" alt="bookmark logo">
+  </div>
 
-  Features
-  Pricing
-  Contact
-  Login
+  <div id="links-menu">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+    <div class="login-button">
+      <a href="">Login</a>
+    </div>
+  </div>
+  <!-- Menu toggle -->
+  <a href="javascript:void(0);" class="toggle-icon" onclick="myFunction()">
+    <img src="./assets/images/icon-hamburger.svg" alt="">
+  </a>
+</section>
 
+<section class="banner">
   A Simple Bookmark Manager
 
   A clean and simple interface to organize your favourite websites. Open a new 
@@ -28,7 +44,9 @@
 
   Get it on Chrome
   Get it on Firefox
+</section>
 
+<section class="features">
   Features
 
   Our aim is to make it quick and easy for you to access your favourite websites. 
@@ -58,7 +76,9 @@
   link that you can send at the click of a button.
 
   More Info
+</section>
 
+<section class="download">
   Download the extension
 
   We’ve got more browsers in the pipeline. Please do let us know if you’ve 
@@ -75,7 +95,10 @@
   Add to Opera
   Minimum version 46
   Add & Install Extension
+</section>
 
+
+<section class="faq">
   Frequently Asked Questions
   
   Here are some of our FAQs. If you have any other questions you’d like 
@@ -113,16 +136,21 @@
   vitae neque eget nisl gravida pellentesque non ut velit.
 
   More Info
+</section>
 
+<section class="contact-form">
   35,000+ already joined
 
   Stay up-to-date with what we’re doing
 
   Contact Us
+</section>
 
+<section class="footer">
   Features
   Pricing
   Contact
+</section>
   
   <footer>
     <p class="attribution">
@@ -130,5 +158,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>
