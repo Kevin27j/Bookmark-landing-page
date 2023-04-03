@@ -1,163 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
-  
+
   <title>Bookmark landing page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
 
 <body>
-<section class="navbar">
-  <div id="bookmark-logo">
-    <img src="./assets/images/logo-bookmark.svg" alt="bookmark logo">
-  </div>
-
-  <div id="links-menu">
-    <a href="#features">Features</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-    <div class="login-button">
-      <a href="">Login</a>
+  <!-- NAVBAR -->
+  <section id="navbar">
+    <div id="bookmark-logo">
+      <img src="./assets/images/logo-bookmark.svg" alt="bookmark logo">
     </div>
-  </div>
-  <!-- Menu toggle -->
-  <a href="javascript:void(0);" class="toggle-icon" onclick="myFunction()">
-    <img src="./assets/images/icon-hamburger.svg" alt="">
-  </a>
-</section>
 
-<section class="banner">
-  A Simple Bookmark Manager
+    <div id="links-menu">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <div class="login-button">
+        <a href="">Login</a>
+      </div>
+    </div>
+    <!-- Menu toggle -->
+    <a href="javascript:void(0);" class="toggle-icon" onclick="myFunction()">
+      <img src="./assets/images/icon-hamburger.svg" alt="">
+    </a>
+  </section>
 
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
+  <!-- BANNER -->
+  <section id="banner">
+    <div class="img-wrapper">
+      <img id="banner-img" src="./assets/images/illustration-hero.svg" alt="banner illustration">
+    </div>
 
-  Get it on Chrome
-  Get it on Firefox
-</section>
+    <div class="banner-wrapper">
+      <h1 id="banner-title">A Simple Bookmark Manager</h1>
 
-<section class="features">
-  Features
+      <p class="text-grey">
+        A clean and simple interface to organize your favourite websites. Open a new
+        browser tab and see your sites load instantly. Try it for free.
+      </p>
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
+      <div type="button" class="btn btn-primary btn-lg">
+        Get it on Chrome
+      </div>
+      <div type="button" class="btn btn-light btn-lg">
+        Get it on Firefox
+      </div>
 
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
+    </div>
+  </section>
 
-  Bookmark in one click
+  <!-- FEATURES SECTION -->
+  <section id="features">
 
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
+    <h3 class="section-title">Features</h3>
 
-  More Info
+    <p class="text-grey">
+      Our aim is to make it quick and easy for you to access your favourite websites.
+      Your bookmarks sync between your devices so you can access them on the go.
+    </p>
 
-  Intelligent search
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Simple Bookmarking</li>
+      <li class="list-group-item">Speedy Searching</li>
+      <li class="list-group-item">Easy Sharing</li>
+    </ul>
 
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
+    <div class="feature-wrapper">
 
-  More Info
+      <div id="tab-1-features">
+        <div class="illustration-img">
+          <img src="./assets/images/illustration-features-tab-1.svg" alt="">
+        </div>
 
-  Share your bookmarks
+        <h3 class="section-title">Bookmark in one click</h3>
 
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
+        <p class="text-grey">
+          Organize your bookmarks however you like. Our simple drag-and-drop interface
+          gives you complete control over how you manage your favourite sites.
+        </p>
 
-  More Info
-</section>
+        <div type="button" class="btn btn-primary btn-lg">
+          More Info
+        </div>
+      </div>
 
-<section class="download">
-  Download the extension
+      <div id="tab-2-features">
+        <div class="illustration-img">
+          <img src="./assets/images/illustration-features-tab-2.svg" alt="">
+        </div>
 
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
+        <h3 class="section-title">Intelligent search</h3>
 
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
+        <p class="text-grey">
+          Our powerful search feature will help you find saved sites in no time at all.
+          No need to trawl through all of your bookmarks.
+        </p>
 
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
+        <div type="button" class="btn btn-primary btn-lg">
+          More Info
+        </div>
+      </div>
 
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-</section>
+      <div id="tab-3-features">
+        <div class="illustration-img">
+          <img src="./assets/images/illustration-features-tab-3.svg" alt="">
+        </div>
+
+        <h3 class="section-title">Share your bookmarks</h3>
+
+        <p class="text-grey">
+          Easily share your bookmarks and collections with others. Create a shareable
+          link that you can send at the click of a button.
+        </p>
+
+        <div type="button" class="btn btn-primary btn-lg">
+          More Info
+        </div>
+      </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing">
+    <h3 class="section-title">Download the extension</h3>
+
+    <p class="text-grey">
+      We’ve got more browsers in the pipeline. Please do let us know if you’ve
+      got a favourite you’d like us to prioritize.
+    </p>
+
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <h5 class="card-title">Add to Chrome</h5>
+      <p class="card-text">Minimum version 62</p>
+      <img src="" alt="">
+      <div type="button" class="btn btn-primary btn-lg">
+        Add & Install Extension
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <h5 class="card-title">Add to Firefox</h5>
+      <p class="card-text">Minimum version 55</p>
+      <img src="" alt="">
+      <div type="button" class="btn btn-primary btn-lg">
+        Add & Install Extension
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <h5 class="card-title">Add to Opera</h5>
+      <p class="card-text">Minimum version 46</p>
+      <img src="" alt="">
+      <div type="button" class="btn btn-primary btn-lg">
+        Add & Install Extension
+      </div>
+    </div>
+  </section>
 
 
-<section class="faq">
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
+  <!-- FAQ SECTION -->
+  <section id="faq">
 
-  <!-- Question 1 -->
-  What is Bookmark?
+    <h3 class="section-title">Frequently Asked Questions</h3>
 
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+    <p class="text-grey">Here are some of our FAQs. If you have any other questions you’d like
+      answered please feel free to email us.</p>
 
-  <!-- Question 2 -->
-  How can I request a new browser?
+    <div id="faq-questions">
 
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+      <div id="question-wrapper">
+        <!-- Question 1 -->
+        <p class="faq-question" data-bs-toggle="collapse" href="#collapseQuestion1" aria-expanded="false"
+          aria-controls="collapseQuestion1">
+          What is Bookmark?
+        </p>
 
-  <!-- Question 3 -->
-  Is there a mobile app?
+        <!-- Answer 1 -->
+        <p class="faq-answer" id="collapseQuestion1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
 
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
+      <div id="question-wrapper">
+        <!-- Question 2 -->
+        <p class="faq-question" data-bs-toggle="collapse" href="#collapseQuestion2" aria-expanded="false"
+          aria-controls="collapseQuestion2">
+          How can I request a new browser?
+        </p>
 
-  <!-- Question 4 -->
-  What about other Chromium browsers?
+        <!-- Answer 2 -->
+        <p class="faq-answer" id="collapseQuestion2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
 
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
+      <div id="question-wrapper">
+        <!-- Question 3 -->
+        <p class="faq-question" data-bs-toggle="collapse" href="#collapseQuestion3" aria-expanded="false"
+          aria-controls="collapseQuestion3">
+          Is there a mobile app?
+        </p>
 
-  More Info
-</section>
+        <!-- Answer 3 -->
+        <p class="faq-answer" id="collapseQuestion3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
 
-<section class="contact-form">
-  35,000+ already joined
+      <div id="question-wrapper">
+        <!-- Question 4 -->
+        <p class="faq-question" data-bs-toggle="collapse" href="#collapseQuestion4" aria-expanded="false"
+          aria-controls="collapseQuestion4">
+          What about other Chromium browsers?
+        </p>
 
-  Stay up-to-date with what we’re doing
+        <!-- Answer 4 -->
+        <p class="faq-answer" id="collapseQuestion4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
 
-  Contact Us
-</section>
+    </div>
 
-<section class="footer">
-  Features
-  Pricing
-  Contact
-</section>
-  
+    <div type="button" class="btn btn-primary btn-lg">
+      More Info
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+
+    <p>35,000+ already joined</p>
+
+    <h3>Stay up-to-date with what we’re doing</h3>
+
+    <form>
+      <input type="email" placeholder="Enter your email address">
+      <button type="button">Contact Us</button>
+    </form>
+
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <section id="footer">
+    <div id="bookmark-logo">
+      <img src="./assets/images/logo-bookmark.svg" alt="bookmark logo">
+    </div>
+
+    <p>Features</p>
+    <p>Pricing</p>
+    <p>Contact</p>
+  </section>
+
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
   <script src="./assets/js/index.js"></script>
 </body>
+
 </html>

@@ -4,8 +4,24 @@ html {
     padding: 0;
 }
 
-/* Nav-bar style */
-.navbar {
+/* Navbar style */
+#navbar {
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px;
+}
+
+.navbar #links-menu {
+    display: none;
+}
+
+/* Banner style */
+#banner {
+    position: relative;
+}
+
+#banner-img {
+    width: 100%;
 }
