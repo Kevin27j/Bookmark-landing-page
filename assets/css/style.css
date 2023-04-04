@@ -1,27 +1,93 @@
-html {
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Navbar style */
+section {
+    margin: 0 2rem;
+    padding: 3.5rem 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+li {
+    list-style: none;
+}
+
+.banner-buttons button {
+    margin: auto;
+    font-size: 1rem;
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+.text-wrapper {
+    padding: 1.5rem 0;
+}
+
+/* Images styling */
+.img-wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.img-wrapper img {
+    width: 90%;
+    height: auto;
+}
+
+/* NAVBAR */
 #navbar {
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin: 40px 20px;
+    padding-top: 2rem;
 }
 
-.navbar #links-menu {
+#links-menu {
     display: none;
 }
 
-/* Banner style */
+/* BANNER */
 #banner {
     position: relative;
 }
 
-#banner-img {
-    width: 100%;
+.banner-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+/* FEATURES */
+
+/* Add top and bottom border to features list */
+#feature-list {
+    border-top: 1px solid rgba(0, 0, 0, 0.128);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.128);
+    margin: 2rem;
+    padding: 0;
+}
+
+.list-item {
+    padding: .80rem 0;
+}
+
+/* add break lines between features list */
+.list-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.128);
+}
+
+.list-item a {
+    padding: .75rem 0;
+}
+
+.list-item-active {
+    border-bottom: 5px solid red;
 }
