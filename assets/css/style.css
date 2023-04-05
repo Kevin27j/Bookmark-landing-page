@@ -30,6 +30,15 @@ li {
     padding: 1.5rem 0;
 }
 
+/* Rules for features tabs */
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
 /* Images styling */
 .img-wrapper {
     text-align: center;
@@ -88,6 +97,6 @@ li {
     padding: .75rem 0;
 }
 
-.list-item-active {
+.active-list {
     border-bottom: 5px solid red;
 }
