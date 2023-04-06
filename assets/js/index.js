@@ -1,15 +1,17 @@
+// NAVBAR TOGGLE FUNCTION
 // Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
 const toggleIcon = $(".toggle-icon");
 
 toggleIcon.click(function () {
-  let x = $("#links-menu");
-  if (x.css("display") === "block") {
-    x.css("display", "none");
+  let linksMenu = $("#links-menu");
+  if (linksMenu.css("display") === "block") {
+    linksMenu.css("display", "none");
   } else {
-    x.css("display", "block");
+    linksMenu.css("display", "block");
   }
 })
 
+// FEATURES LIST TOGGLE
 // Show features tab based on list selection
 const featureList = $(".list-item");
 const featureTabs = $(".feature-wrapper > div");
@@ -25,4 +27,13 @@ for (let i = 0; i < featureList.length; i++) {
   })
 }
 
-console.log()
+// FAQ ACCORDION TOGGLE
+const faqAcc = $(".faq-accordion");
+const faqPanel = $(".faq-panel");
+
+for (let i = 0; i < faqAcc.length; i++) {
+  console.log(faqAcc.eq(i).text());
+  faqAcc.eq(i).click(function () {
+    faqPanel.eq(i).toggleClass("hide")
+  })
+}

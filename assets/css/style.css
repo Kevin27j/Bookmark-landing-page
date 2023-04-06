@@ -19,15 +19,30 @@ li {
     list-style: none;
 }
 
-.banner-buttons button {
-    margin: auto;
-    font-size: 1rem;
-    padding: .6rem;
+.buttons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons-div button {
+    margin: .5rem;
+    font-size: .8rem;
+    padding: .6rem 1.2rem;
     border-radius: 5px;
 }
 
 .text-wrapper {
-    padding: 1.5rem 0;
+    padding: 1.5rem .5rem;
+}
+
+/* General rule for list bottom border */
+.list-item {
+    padding: .80rem 0;
+}
+
+.list-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.128);
 }
 
 /* Rules for features tabs */
@@ -69,11 +84,6 @@ li {
     position: relative;
 }
 
-.banner-buttons {
-    display: flex;
-    flex-direction: row;
-}
-
 /* FEATURES */
 
 /* Add top and bottom border to features list */
@@ -84,13 +94,9 @@ li {
     padding: 0;
 }
 
-.list-item {
-    padding: .80rem 0;
-}
-
-/* add break lines between features list */
-.list-item:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.128);
+/* add break lines between features list except last child */
+#feature-list.list-item:last-child {
+    border-bottom: 0;
 }
 
 .list-item a {
@@ -99,4 +105,57 @@ li {
 
 .active-list {
     border-bottom: 5px solid red;
+}
+
+/* PRICING */
+
+.pricing-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-card {
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+    border-radius: 5%;
+}
+
+.p-card > .buttons-div {
+    margin: 1rem 0;
+}
+
+.img-top {
+    width: 80px;
+    margin: 2.5rem 0 0rem;
+}
+
+/* FAQ */
+
+#faq-questions > .list-item {
+    text-align: left;
+    padding-bottom: .5rem;
+}
+
+/* Accordion Style Resource: https://wpbeaches.com/create-expandcollapse-faq-accordion-collapse-click/ */
+.faq-accordion {
+    padding: .5rem 0;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.faq-accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.faq-accordion.active:after {
+    content: "\2796"; 
+}
+
+.faq-panel {
+    padding: .5rem 0;
 }
