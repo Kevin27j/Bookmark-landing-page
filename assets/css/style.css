@@ -15,11 +15,11 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 18px;
 }
 
 section {
-    /* margin: 0 2rem; */
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
     text-align: center;
     font-family: 'Rubik', sans-serif;
 }
@@ -33,6 +33,17 @@ li {
     list-style: none;
 }
 
+/* General rule for buttons */
+.buttons {
+    border: 0;
+    border-radius: 5px;
+    padding: .8rem 1.2rem;
+    font-size: .8rem;
+    background-color: var(--soft-blue);
+    color: #fff;
+    font-weight: 500;
+}
+
 .buttons-div {
     display: flex;
     flex-direction: row;
@@ -41,13 +52,15 @@ li {
 
 .buttons-div button {
     margin: .5rem;
-    font-size: .8rem;
-    padding: .6rem 1.2rem;
-    border-radius: 5px;
+}
+
+/* General rule for box shadow */
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
 }
 
 .text-wrapper {
-    padding: 1.5rem .5rem;
+    padding: 3.5rem .5rem 0;
 }
 
 /* General rule for list bottom border */
@@ -76,9 +89,21 @@ li {
     width: 100%;
 }
 
+.img-background {
+    position: absolute;
+    background-color: var(--soft-blue);
+    width: 100%;
+    height: 80%;
+    right: -50px;
+    bottom: 0px;
+    border-radius: 0 0 0 100px;
+}
+
 .img-wrapper img {
+    position: relative;
     width: inherit;
     height: auto;
+    z-index: 100;
 }
 
 /* NAVBAR */
@@ -97,6 +122,11 @@ li {
 /* BANNER */
 #banner {
     position: relative;
+}
+
+.white-firefox {
+    background-color: #f5f0f0;
+    color: #000000a3;
 }
 
 /* FEATURES */
@@ -131,7 +161,6 @@ li {
 
 .p-card {
     margin: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
     border-radius: 5%;
 }
 
@@ -209,8 +238,8 @@ li {
 .attribution {
     font-size: 11px;
     text-align: center;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
