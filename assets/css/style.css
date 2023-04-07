@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+
+:root {
+    /* Primary */
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-red: hsl(0, 94%, 66%);
+
+    /* Neutral */
+    --grayish-blue: hsl(229, 8%, 60%);
+    --very-dark-blue: hsl(229, 31%, 21%);
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -5,9 +18,10 @@ body {
 }
 
 section {
-    margin: 0 2rem;
-    padding: 3.5rem 0;
+    /* margin: 0 2rem; */
+    padding: 2.5rem 1.5rem;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -39,6 +53,7 @@ li {
 /* General rule for list bottom border */
 .list-item {
     padding: .80rem 0;
+    cursor: pointer;
 }
 
 .list-item:not(:last-child) {
@@ -62,7 +77,7 @@ li {
 }
 
 .img-wrapper img {
-    width: 90%;
+    width: inherit;
     height: auto;
 }
 
@@ -90,7 +105,7 @@ li {
 #feature-list {
     border-top: 1px solid rgba(0, 0, 0, 0.128);
     border-bottom: 1px solid rgba(0, 0, 0, 0.128);
-    margin: 2rem;
+    margin: 2rem 0;
     padding: 0;
 }
 
@@ -104,7 +119,7 @@ li {
 }
 
 .active-list {
-    border-bottom: 5px solid red;
+    border-bottom: 4px solid red;
 }
 
 /* PRICING */
@@ -120,7 +135,7 @@ li {
     border-radius: 5%;
 }
 
-.p-card > .buttons-div {
+.p-card>.buttons-div {
     margin: 1rem 0;
 }
 
@@ -129,9 +144,13 @@ li {
     margin: 2.5rem 0 0rem;
 }
 
+.dots-img {
+    width: 100%;
+}
+
 /* FAQ */
 
-#faq-questions > .list-item {
+#faq-questions>.list-item {
     text-align: left;
     padding-bottom: .5rem;
 }
@@ -139,23 +158,59 @@ li {
 /* Accordion Style Resource: https://wpbeaches.com/create-expandcollapse-faq-accordion-collapse-click/ */
 .faq-accordion {
     padding: .5rem 0;
-    cursor: pointer;
     width: 100%;
     transition: 0.4s;
 }
 
 .faq-accordion:after {
-    content: '\2795'; 
+    content: '\2795';
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
 }
 
-.faq-accordion.active:after {
-    content: "\2796"; 
-}
-
 .faq-panel {
     padding: .5rem 0;
 }
+
+/* CONTACT */
+
+#contact {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 1.8rem 0rem;
+}
+
+.form-input {
+    border: 0;
+    border-radius: 5px;
+    padding: .8rem;
+    margin-bottom: 1rem;
+}
+
+.form>button {
+    background-color: red;
+    color: white;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: hsl(229, 31%, 21%);
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

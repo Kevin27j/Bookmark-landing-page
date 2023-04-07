@@ -13,23 +13,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <!-- NAVBAR -->
   <section id="navbar">
-    <div id="bookmark-logo">
+    <div class="bookmark-logo">
       <img src="./assets/images/logo-bookmark.svg" alt="bookmark logo">
     </div>
 
@@ -87,9 +76,9 @@
       </p>
 
       <ul id="feature-list">
-        <li class="list-item"><a href="#feature-list" class="active-list">Simple Bookmarking</a></li>
-        <li class="list-item"><a href="#feature-list">Speedy Searching</a></li>
-        <li class="list-item"><a href="#feature-list">Easy Sharing</a></li>
+        <li class="list-item"><a class="active-list">Simple Bookmarking</a></li>
+        <li class="list-item"><a>Speedy Searching</a></li>
+        <li class="list-item"><a>Easy Sharing</a></li>
       </ul>
     </div>
 
@@ -293,30 +282,34 @@
 
     <h3>Stay up-to-date with what we’re doing</h3>
 
-    <form>
-      <input type="email" placeholder="Enter your email address">
-      <button type="button">Contact Us</button>
+    <form class="form">
+      <input type="email" class="form-input" placeholder="Enter your email address">
+      <button type="button" class="form-input">Contact Us</button>
     </form>
 
   </section>
 
   <!-- FOOTER SECTION -->
   <section id="footer">
-    <div id="bookmark-logo">
-      <img src="./assets/images/logo-bookmark.svg" alt="bookmark logo">
+
+    <div class="footer-links">
+      <p>FEATURES</p>
+      <p>PRICING</p>
+      <p>CONTACT</p>  
     </div>
 
-    <p>Features</p>
-    <p>Pricing</p>
-    <p>Contact</p>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Kejvin Pashaj</a>.
+    </p>
   </section>
 
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
