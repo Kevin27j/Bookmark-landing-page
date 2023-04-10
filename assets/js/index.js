@@ -29,11 +29,12 @@ for (let i = 0; i < featureList.length; i++) {
 
 // FAQ ACCORDION TOGGLE
 const faqAcc = $(".faq-accordion");
-const faqPanel = $(".faq-panel");
 
 for (let i = 0; i < faqAcc.length; i++) {
-  console.log(faqAcc.eq(i).text());
   faqAcc.eq(i).click(function () {
-    faqPanel.eq(i).toggleClass("hide")
+    faqAcc.eq(i).toggleClass("active");
+
+    let faqPanel = $(".faq-panel");
+    faqPanel.eq(i).toggleClass("hide");
   })
 }

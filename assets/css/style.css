@@ -15,7 +15,6 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 18px;
 }
 
 section {
@@ -33,6 +32,18 @@ li {
     list-style: none;
 }
 
+.text-wrapper {
+    padding: 3.5rem .5rem 0;
+}
+
+.text-grey {
+    font-size: .9rem;
+    opacity: .8;
+    color: var(--grayish-blue);
+    line-height: 1.7rem;
+
+}
+
 /* General rule for buttons */
 .buttons {
     border: 0;
@@ -42,6 +53,7 @@ li {
     background-color: var(--soft-blue);
     color: #fff;
     font-weight: 500;
+    margin: 1.5rem 0;
 }
 
 .buttons-div {
@@ -57,10 +69,6 @@ li {
 /* General rule for box shadow */
 .box-shadow {
     box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
-}
-
-.text-wrapper {
-    padding: 3.5rem .5rem 0;
 }
 
 /* General rule for list bottom border */
@@ -89,7 +97,8 @@ li {
     width: 100%;
 }
 
-.img-background {
+/* Background image absolute position */
+/* .img-background {
     position: absolute;
     background-color: var(--soft-blue);
     width: 100%;
@@ -97,7 +106,7 @@ li {
     right: -50px;
     bottom: 0px;
     border-radius: 0 0 0 100px;
-}
+} */
 
 .img-wrapper img {
     position: relative;
@@ -149,7 +158,7 @@ li {
 }
 
 .active-list {
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid var(--soft-red);
 }
 
 /* PRICING */
@@ -164,8 +173,8 @@ li {
     border-radius: 5%;
 }
 
-.p-card>.buttons-div {
-    margin: 1rem 0;
+.p-card > .buttons {
+    padding: 0.8rem 2.5rem;
 }
 
 .img-top {
@@ -192,11 +201,15 @@ li {
 }
 
 .faq-accordion:after {
-    content: '\2795';
+    content:'\02795';
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
 }
 
 .faq-panel {
@@ -224,8 +237,9 @@ li {
 }
 
 .form>button {
-    background-color: red;
+    background-color: var(--soft-red);
     color: white;
+    font-size: .8rem;
 }
 
 /* FOOTER */
@@ -238,6 +252,8 @@ li {
 .attribution {
     font-size: 11px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .attribution a {
