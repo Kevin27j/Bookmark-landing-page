@@ -3,7 +3,7 @@
 const toggleIcon = $(".toggle-icon");
 
 toggleIcon.click(function () {
-  let linksMenu = $("#links-menu");
+  let linksMenu = $(".links-wrapper");
   if (linksMenu.css("display") === "block") {
     linksMenu.css("display", "none");
   } else {
@@ -38,3 +38,31 @@ for (let i = 0; i < faqAcc.length; i++) {
     faqPanel.eq(i).toggleClass("hide");
   })
 }
+
+// EMAIL VALIDATION 
+const form = $(".form");
+const emailInput = $(".email-input");
+const emailButton = $(".form-button");
+const emailError = $(".email-error");
+
+// Validate email
+const emailRgx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+emailButton.click(function(){
+  // if user input is not an email show error message
+  if (!emailInput.val().match(emailRgx) || emailInput.val() === ""){
+    emailError.css("display", "block");
+    // Remove error message when user clicks on email input
+    emailInput.click(function(){
+      emailError.css("display", "none");
+    })
+  } 
+  else {
+    emailError.css("display", "none")
+    alert("Great Success")
+    form.submit(function(event){
+      event.preventDefault();
+    });
+  }
+})
+

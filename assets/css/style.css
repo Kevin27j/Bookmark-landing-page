@@ -124,8 +124,16 @@ li {
     padding-top: 2rem;
 }
 
-#links-menu {
+.links-wrapper {
     display: none;
+}
+
+.links-menu {
+    padding: 0 1rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 /* BANNER */
@@ -173,7 +181,7 @@ li {
     border-radius: 5%;
 }
 
-.p-card > .buttons {
+.p-card>.buttons {
     padding: 0.8rem 2.5rem;
 }
 
@@ -201,7 +209,7 @@ li {
 }
 
 .faq-accordion:after {
-    content:'\02795';
+    content: '\02795';
     font-size: 13px;
     color: #777;
     float: right;
@@ -223,17 +231,38 @@ li {
     color: white;
 }
 
+#contact>p {
+    letter-spacing: .3rem;
+    font-size: .8rem;
+}
+
 .form {
     display: flex;
     flex-direction: column;
-    margin: 1.8rem 0rem;
+    gap: 1rem;
+    margin: 1.4rem 0rem;
+}
+
+.email-input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-error {
+    display: none;
+    font-size: .8rem;
+    text-align: left;
+    padding: .5rem 1rem;
 }
 
 .form-input {
     border: 0;
     border-radius: 5px;
     padding: .8rem;
-    margin-bottom: 1rem;
+}
+
+.form-input:last-child {
+    margin-bottom: 0;
 }
 
 .form>button {
@@ -249,11 +278,22 @@ li {
     color: white;
 }
 
+#footer a {
+    color: white !important;
+    letter-spacing: .1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    margin-top: 4rem;
 }
 
 .attribution a {
