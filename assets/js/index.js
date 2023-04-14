@@ -1,15 +1,30 @@
 // NAVBAR TOGGLE FUNCTION
 // Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
-const toggleIcon = $(".toggle-icon");
+const openIcon = $(".open-icon");
+const closeIcon =$(".close-icon");
+const linksWrapper = $(".links-wrapper");
+const links = $(".links-menu a");
 
-toggleIcon.click(function () {
-  let linksMenu = $(".links-wrapper");
-  if (linksMenu.css("display") === "block") {
-    linksMenu.css("display", "none");
-  } else {
-    linksMenu.css("display", "block");
+openIcon.click(function () {
+  // Open overlay menu
+  if(linksWrapper.css("display") === "none") {
+    linksWrapper.css("display", "block");
+    // Close overlay menu
+    closeIcon.click(function(){
+      if(linksWrapper.css("display") === "block") {
+        linksWrapper.css("display", "none");
+      }
+    })
+
+    // Close menu if click on menu link
+    links.click(function(){
+      if(linksWrapper.css("display") === "block") {
+        linksWrapper.css("display", "none");
+      }
+
+    })
   }
-})
+});
 
 // FEATURES LIST TOGGLE
 // Show features tab based on list selection
@@ -48,19 +63,19 @@ const emailError = $(".email-error");
 // Validate email
 const emailRgx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-emailButton.click(function(){
+emailButton.click(function () {
   // if user input is not an email show error message
-  if (!emailInput.val().match(emailRgx) || emailInput.val() === ""){
+  if (!emailInput.val().match(emailRgx) || emailInput.val() === "") {
     emailError.css("display", "block");
     // Remove error message when user clicks on email input
-    emailInput.click(function(){
+    emailInput.click(function () {
       emailError.css("display", "none");
     })
-  } 
+  }
   else {
     emailError.css("display", "none")
     alert("Great Success")
-    form.submit(function(event){
+    form.submit(function (event) {
       event.preventDefault();
     });
   }
