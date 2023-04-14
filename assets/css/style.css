@@ -175,6 +175,14 @@ li {
 
 }
 
+.overlay-wrapper .social-links {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+
 .overlay-menu a{
     opacity: .8;
 }

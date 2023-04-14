@@ -9,6 +9,7 @@ openIcon.click(function () {
   // Open overlay menu
   if(linksWrapper.css("display") === "none") {
     linksWrapper.css("display", "block");
+    
     // Close overlay menu
     closeIcon.click(function(){
       if(linksWrapper.css("display") === "block") {
