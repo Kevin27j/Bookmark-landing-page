@@ -73,6 +73,7 @@ emailButton.click(function () {
       emailError.css("display", "none");
     })
   }
+  // else if user input is a valid email
   else {
     emailError.css("display", "none")
     alert("Great Success")

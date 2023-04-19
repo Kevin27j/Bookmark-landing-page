@@ -11,6 +11,7 @@
     --very-dark-blue: hsl(229, 31%, 21%);
 }
 
+/* GENERAL ELEMENTS STYLE */
 body {
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +22,7 @@ section {
     padding: 2rem 1.5rem;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    position: relative;
 }
 
 a {
@@ -32,8 +34,11 @@ li {
     list-style: none;
 }
 
+/* GENERAL CLASSES STYLE */
 .text-wrapper {
-    padding: 3.5rem .5rem 0;
+    padding: 3.5rem .5rem 2rem;
+    max-width: 31.25rem;
+    margin: 0 auto;
 }
 
 .text-grey {
@@ -41,10 +46,16 @@ li {
     opacity: .8;
     color: var(--grayish-blue);
     line-height: 1.7rem;
-
 }
 
-/* General rule for buttons */
+/* General style for buttons */
+.buttons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .buttons {
     border: 0;
     border-radius: 5px;
@@ -56,16 +67,6 @@ li {
     margin: 1.5rem 0;
 }
 
-.buttons-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.buttons-div button {
-    margin: .5rem;
-}
-
 .form-button {
     background-color: var(--soft-red);
     color: white;
@@ -73,7 +74,7 @@ li {
 }
 
 
-/* General rule for box shadow */
+/* Buttons and cards box shadow */
 .box-shadow {
     box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
 }
@@ -88,7 +89,8 @@ li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.128);
 }
 
-/* Rules for features tabs */
+/* Rules for features tabs, 
+show/hide tabs based on selection */
 .show {
     display: block;
 }
@@ -104,7 +106,7 @@ li {
     width: 100%;
 }
 
-/* Background image absolute position */
+/* Background image style absolute position / Not working*/
 /* .img-background {
     position: absolute;
     background-color: var(--soft-blue);
@@ -124,11 +126,8 @@ li {
 
 /* NAVBAR */
 #navbar {
-    overflow: hidden;
-    position: relative;
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
 }
 
 .links-wrapper {
@@ -143,6 +142,7 @@ li {
     gap: 1.5rem;
 }
 
+/* Rules for Mobile layout overlay menu */
 .overlay-wrapper {
     height: 100%;
     width: 100%;
@@ -154,7 +154,6 @@ li {
     opacity: .9;
     overflow-x: hidden;
     transition: 0.5s;
-
 }
 
 .overlay-menu {
@@ -172,7 +171,6 @@ li {
     display: block;
     transition: 0.3s;
     letter-spacing: 3px;
-
 }
 
 .overlay-wrapper .social-links {
@@ -198,14 +196,11 @@ li {
     border: 2px solid #fff;
     background-color: transparent;
     font-size: 1.5rem;
-
 }
 
 /* BANNER */
-#banner {
-    position: relative;
-}
 
+/* White background button / Alternative color */
 .white-firefox {
     background-color: #f5f0f0;
     color: #000000a3;
@@ -214,7 +209,7 @@ li {
 /* FEATURES */
 
 /* Add top and bottom border to features list */
-#feature-list {
+.feature-list {
     border-top: 1px solid rgba(0, 0, 0, 0.128);
     border-bottom: 1px solid rgba(0, 0, 0, 0.128);
     margin: 2rem 0;
@@ -222,7 +217,7 @@ li {
 }
 
 /* add break lines between features list except last child */
-#feature-list.list-item:last-child {
+.feature-list.list-item:last-child {
     border-bottom: 0;
 }
 
@@ -239,15 +234,22 @@ li {
 .pricing-cards {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .p-card {
     margin: 1rem;
     border-radius: 5%;
+    min-width: 260px;
+    max-width: 18.125rem;
+}
+
+.p-card>.text-wrapper{
+    padding: 2rem 0.5rem 0;
 }
 
 .p-card>.buttons {
-    padding: 0.8rem 2.5rem;
+    padding: 0.8rem 3rem;
 }
 
 .img-top {
@@ -260,8 +262,12 @@ li {
 }
 
 /* FAQ */
+.faq-questions {
+    margin: 0 auto;
+    max-width: 31.25rem;
+}
 
-#faq-questions>.list-item {
+.faq-questions>.list-item {
     text-align: left;
     padding-bottom: .5rem;
 }
@@ -275,7 +281,7 @@ li {
 
 .faq-accordion:after {
     content: '\02795';
-    font-size: 13px;
+    font-size: 0.813rem;
     color: #777;
     float: right;
     margin-left: 5px;
