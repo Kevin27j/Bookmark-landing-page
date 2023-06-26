@@ -73,7 +73,6 @@ li {
     font-size: .8rem;
 }
 
-
 /* Buttons and cards box shadow */
 .box-shadow {
     box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
@@ -101,9 +100,17 @@ show/hide tabs based on selection */
 
 /* Images styling */
 .img-wrapper {
-    text-align: center;
     position: relative;
     width: 100%;
+    max-width: 29.25rem;
+    margin: 0 auto;
+}
+
+.img-wrapper img {
+    position: relative;
+    width: inherit;
+    height: auto;
+    z-index: 1;
 }
 
 /* Background image style absolute position / Not working*/
@@ -117,12 +124,6 @@ show/hide tabs based on selection */
     border-radius: 0 0 0 100px;
 } */
 
-.img-wrapper img {
-    position: relative;
-    width: inherit;
-    height: auto;
-    z-index: 1;
-}
 
 /* NAVBAR */
 #navbar {
@@ -130,20 +131,9 @@ show/hide tabs based on selection */
     justify-content: space-between;
 }
 
+/* Rules for Mobile layout overlay menu */
 .links-wrapper {
     display: none;
-}
-
-.links-menu {
-    padding: 0 1rem;
-    margin: 3rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* Rules for Mobile layout overlay menu */
-.overlay-wrapper {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -156,14 +146,7 @@ show/hide tabs based on selection */
     transition: 0.5s;
 }
 
-.overlay-menu {
-    position: relative;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-}
-
-.overlay-wrapper a {
+.links-wrapper a {
     padding: 8px;
     font-size: 1.5rem;
     font-weight: normal;
@@ -173,7 +156,7 @@ show/hide tabs based on selection */
     letter-spacing: 3px;
 }
 
-.overlay-wrapper .social-links {
+.links-wrapper .social-links {
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
@@ -181,7 +164,25 @@ show/hide tabs based on selection */
     right: 0;
 }
 
-.overlay-menu a{
+/* .desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+} */
+
+.links-menu {
+    padding: 0 1rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.links-menu a {
     opacity: .8;
 }
 
@@ -196,6 +197,12 @@ show/hide tabs based on selection */
     border: 2px solid #fff;
     background-color: transparent;
     font-size: 1.5rem;
+}
+
+.links-menu-desktop {
+    display: none;
+    align-items: center;
+    gap: 2rem;
 }
 
 /* BANNER */
@@ -244,7 +251,7 @@ show/hide tabs based on selection */
     max-width: 18.125rem;
 }
 
-.p-card>.text-wrapper{
+.p-card>.text-wrapper {
     padding: 2rem 0.5rem 0;
 }
 
@@ -363,4 +370,29 @@ show/hide tabs based on selection */
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* BIGGER SIZE */
+@media only screen and (min-width: 768px) {
+
+    #navbar {
+        padding: 2rem 7rem;
+    }
+
+    .open-icon {
+        display: none;
+    }
+
+    .links-menu-desktop {
+        display: flex;
+        align-items: center;
+    }
+
+    .links-menu-desktop .buttons {
+        padding: .2rem 1.5rem;
+        margin: 0;
+        color: #fff;
+        /* background-color: var(--soft-blue); */
+    }
+
 }
