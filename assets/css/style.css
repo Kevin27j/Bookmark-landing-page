@@ -375,6 +375,7 @@ show/hide tabs based on selection */
 /* BIGGER SIZE */
 @media only screen and (min-width: 768px) {
 
+    /* NAVBAR */
     #navbar {
         padding: 2rem 7rem;
     }
@@ -391,8 +392,24 @@ show/hide tabs based on selection */
     .links-menu-desktop .buttons {
         padding: .2rem 1.5rem;
         margin: 0;
-        color: #fff;
-        /* background-color: var(--soft-blue); */
+        color: #fff !important;
     }
 
+    /* BANNER */
+    #banner {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #banner .text-wrapper {
+        text-align: left;
+    }
+
+    #banner .buttons-div {
+        justify-content: flex-start;
+    }
+
+    #banner .buttons-div .buttons {
+        margin: 0;
+    }
 }
