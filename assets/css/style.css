@@ -412,4 +412,22 @@ show/hide tabs based on selection */
     #banner .buttons-div .buttons {
         margin: 0;
     }
+
+    /* FEATURES */
+    #features .text-wrapper {
+        width: 100%;
+        /* overflow: auto; */
+    }
+
+    .feature-list {
+        display: flex;
+        justify-content: space-between;
+        border-top: 0;
+        width: 120%;
+        margin: 0 -10%;
+    }
+
+    .feature-list .list-item {
+        border-bottom: 0;
+    }
 }
