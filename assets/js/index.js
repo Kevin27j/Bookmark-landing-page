@@ -86,6 +86,18 @@ emailButton.click(function () {
   }
 })
 
+// PRICING CARDS STYLE
+const pricingCards = $(".pricing-cards");
+
+// INCREMENT MARGIN FOR EACH CARD
+// pricingCards.children('.p-card').each(function (index) {
+//   if (index > 0) {
+//     const marginValue = index + 20;
+//     $(this).css('margin-top', marginValue + 'px');
+//   }
+// });
+
+
 // MEDIA QUERIES
 const tabletScreen = window.matchMedia('(min-width: 768px)');
 

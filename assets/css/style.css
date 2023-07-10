@@ -307,6 +307,7 @@ show/hide tabs based on selection */
 #contact {
     background-color: hsl(231, 69%, 60%);
     color: white;
+    margin-top: 50px;
 }
 
 #contact>p {
@@ -437,5 +438,39 @@ show/hide tabs based on selection */
 
     .feature-wrapper .text-wrapper {
         text-align: left;
+    }
+
+    /* PRICING CARDS */
+    .pricing-cards {
+        flex-direction: row;
+        align-items: normal;
+        justify-content: center;
+    }
+
+    /* CONTACT */
+    #contact {
+        padding: 70px ;
+    }
+
+    .form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* FOOTER */
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 100px;
+    }
+
+    .links-menu {
+        margin: 0;
+        flex-direction: row;
+    }
+
+    .attribution {
+        margin-top: 4rem;
     }
 }
