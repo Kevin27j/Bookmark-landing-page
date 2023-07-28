@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile home page](assets/screenshots/desktop-design.png)
-![mobile home page - menu](assets/screenshots/desktop-design-menu.png)
+![mobile home page](assets/screenshots/mobile-design.png)
+![mobile home page - menu](assets/screenshots/mobile-design-menu.png)
 
 ### Links
 
