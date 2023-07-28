@@ -98,24 +98,3 @@ const pricingCards = $(".pricing-cards");
 // });
 
 
-// MEDIA QUERIES
-const tabletScreen = window.matchMedia('(min-width: 768px)');
-
-// TABLET LAYOUT
-// tabletScreen.onchange = (e) => {
-//   if(tabletScreen.matches) {
-//     // NAVBAR STYLES
-//     openIcon.css("display", "none");
-//     // Remove overlay classes and elements for navigation menu
-//     linksWrapper.removeClass("overlay-wrapper");
-//     linksMenu.removeClass("overlay-menu");
-//     socialLinks.remove();
-//     closeIcon.remove();
-//     // Position nav menu horizontally
-//     linksWrapper.css("display", "block");
-    
-//     linksMenu.css("flex-direction", "row");
-//   }
-// }
-
-// tabletScreen.onchange();
