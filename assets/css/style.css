@@ -67,15 +67,19 @@ li {
     margin: 1.5rem 0;
 }
 
+.buttons:hover {
+    background-color: #fff;
+}
+
 .form-button {
     background-color: var(--soft-red);
+    border: 1.5px solid var(--soft-red);
     color: white;
     font-size: .8rem;
-    border: 1.5px solid var(--soft-red);
+    margin: 0;
 }
 
 .form-button:hover {
-    background-color: #fff;
     color: var(--soft-red);
 }
 
