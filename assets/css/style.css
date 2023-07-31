@@ -71,6 +71,12 @@ li {
     background-color: var(--soft-red);
     color: white;
     font-size: .8rem;
+    border: 1.5px solid var(--soft-red);
+}
+
+.form-button:hover {
+    background-color: #fff;
+    color: var(--soft-red);
 }
 
 /* Buttons and cards box shadow */
@@ -205,6 +211,10 @@ show/hide tabs based on selection */
     gap: 2rem;
 }
 
+.links-menu-desktop a:hover {
+    color: var(--soft-red) !important;
+}
+
 /* BANNER */
 
 /* White background button / Alternative color */
@@ -327,6 +337,10 @@ show/hide tabs based on selection */
     flex-direction: column;
 }
 
+.email-input {
+    border: 0;
+}
+
 .email-error {
     display: none;
     font-size: .8rem;
@@ -335,7 +349,6 @@ show/hide tabs based on selection */
 }
 
 .form-input {
-    border: 0;
     border-radius: 5px;
     padding: .8rem;
 }
@@ -449,7 +462,7 @@ show/hide tabs based on selection */
 
     /* CONTACT */
     #contact {
-        padding: 70px ;
+        padding: 40px;
     }
 
     .form {

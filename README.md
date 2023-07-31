@@ -1,4 +1,4 @@
-# Frontend Mentor - Bookmark landing page solution
+# Bookmark landing page solution
 
 I used mainly Javascript with JQuery and some Bootstrap for the buttons and small components.
 This project helped me with reinforcing my Javascript and JQeury knowledge.
@@ -7,7 +7,7 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 ## Table of contents
 
-- [Frontend Mentor - Bookmark landing page solution](#frontend-mentor---bookmark-landing-page-solution)
+- [Bookmark landing page solution](#bookmark-landing-page-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -35,6 +35,7 @@ Users should be able to:
 ### Screenshot
 
 ![mobile home page](assets/screenshots/mobile-design.png)
+
 ![mobile home page - menu](assets/screenshots/mobile-design-menu.png)
 
 ### Links
