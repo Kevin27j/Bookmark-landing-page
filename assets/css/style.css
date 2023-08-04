@@ -133,16 +133,24 @@ show/hide tabs based on selection */
 }
 
 /* Background image style absolute position / Not working*/
-/* .img-background {
+.blue-background {
     position: absolute;
     background-color: var(--soft-blue);
-    width: 100%;
+    width: 110%;
     height: 80%;
-    right: -50px;
-    bottom: 0px;
+    right: -50%;
+    bottom: -5%;
     border-radius: 0 0 0 100px;
-} */
+}
 
+.blue-background-features {
+    position: absolute;
+    background-color: var(--soft-blue);
+    width: 110%;
+    height: 80%;
+    left: -50%;
+    bottom: -5%;
+    border-radius: 0 0 100px 0;}
 
 /* NAVBAR */
 #navbar {
@@ -225,7 +233,6 @@ show/hide tabs based on selection */
 }
 
 /* BANNER */
-
 /* White background button / Alternative color */
 .white-firefox {
     background-color: #f5f0f0;
