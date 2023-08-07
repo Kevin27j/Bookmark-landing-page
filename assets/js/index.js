@@ -29,7 +29,6 @@ openIcon.click(function () {
   }
 });
 
-
 // FEATURES LIST TOGGLE
 // Show features tab based on list selection
 const featureList = $(".list-item");
@@ -50,8 +49,9 @@ for (let i = 0; i < featureList.length; i++) {
 const faqAcc = $(".faq-accordion");
 
 for (let i = 0; i < faqAcc.length; i++) {
-  faqAcc.eq(i).click(function () {
-    faqAcc.eq(i).toggleClass("active");
+  let faqList = faqAcc.eq(i);
+  faqList.click(function () {
+    faqList.toggleClass("active");
 
     let faqPanel = $(".faq-panel");
     faqPanel.eq(i).toggleClass("hide");
@@ -85,16 +85,5 @@ emailButton.click(function () {
     });
   }
 })
-
-// PRICING CARDS STYLE
-const pricingCards = $(".pricing-cards");
-
-// INCREMENT MARGIN FOR EACH CARD
-// pricingCards.children('.p-card').each(function (index) {
-//   if (index > 0) {
-//     const marginValue = index + 20;
-//     $(this).css('margin-top', marginValue + 'px');
-//   }
-// });
 
 
