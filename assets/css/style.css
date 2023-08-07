@@ -132,17 +132,18 @@ show/hide tabs based on selection */
     z-index: 1;
 }
 
-/* Background image style absolute position / Not working*/
+/* Background image style absolute position BANNER */
 .blue-background {
     position: absolute;
     background-color: var(--soft-blue);
-    width: 120%;
+    width: 110%;
     height: 90%;
     right: -50%;
     bottom: -10%;
     border-radius: 0 0 0 120px;
 }
 
+/* Background image style absolute position FEATURES */
 .blue-background-features {
     position: absolute;
     background-color: var(--soft-blue);
@@ -485,6 +486,20 @@ show/hide tabs based on selection */
         align-items: normal;
         justify-content: center;
     }
+
+    #chrome-card {
+        margin-bottom: 100px;
+    }
+
+    #firefox-card {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
+    #opera-card {
+        margin-top: 100px;
+    }
+
 
     /* CONTACT */
     #contact {
