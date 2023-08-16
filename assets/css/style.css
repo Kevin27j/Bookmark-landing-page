@@ -16,6 +16,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 section {
@@ -136,9 +137,9 @@ show/hide tabs based on selection */
 .blue-background {
     position: absolute;
     background-color: var(--soft-blue);
-    width: 110%;
+    width: 100%;
     height: 90%;
-    right: -50%;
+    right: -30%;
     bottom: -10%;
     border-radius: 0 0 0 120px;
 }
@@ -147,9 +148,9 @@ show/hide tabs based on selection */
 .blue-background-features {
     position: absolute;
     background-color: var(--soft-blue);
-    width: 120%;
+    width: 100%;
     height: 90%;
-    left: -60%;
+    left: -30%;
     bottom: -10%;
     border-radius: 0 0 100px 0;
 }
@@ -377,7 +378,6 @@ show/hide tabs based on selection */
 }
 
 /* FOOTER */
-
 #footer {
     background-color: hsl(229, 31%, 21%);
     color: white;
@@ -413,7 +413,7 @@ show/hide tabs based on selection */
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
     /* NAVBAR */
     #navbar {
@@ -526,5 +526,18 @@ show/hide tabs based on selection */
 
     .attribution {
         margin-top: 4rem;
+    }
+}
+
+/* Media breakpoint for wider screens - Fix images blue background */
+@media only screen and (min-width: 1470px) {
+    .blue-background {
+        width: calc(100% + 30%);
+        right: calc(-30% + -30%);
+    }
+
+    .blue-background-features {
+        width: calc(100% + 30%);
+        left: calc(-30% + -30%);
     }
 }
