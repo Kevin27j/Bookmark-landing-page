@@ -348,7 +348,6 @@ show/hide tabs based on selection */
 .form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 1rem;
     margin: 1.4rem 0rem;
 }
@@ -376,7 +375,6 @@ show/hide tabs based on selection */
 
 .form-input:last-child {
     margin-bottom: 0;
-    
 }
 
 /* FOOTER */
@@ -511,6 +509,7 @@ show/hide tabs based on selection */
     .form {
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start;
     }
 
     /* FOOTER */
